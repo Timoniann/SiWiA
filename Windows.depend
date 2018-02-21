@@ -1,0 +1,183 @@
+# depslib dependency file v1.0
+1494926583 source:d:\proj\windows\src\imagebox.cpp
+	"ImageBox.h"
+
+1494926583 d:\proj\windows\include\imagebox.h
+
+1494350528 source:d:\proj\windows\src\button.cpp
+	"Button.h"
+
+1494350528 d:\proj\windows\include\button.h
+	<Element.h>
+
+1494493387 d:\proj\windows\include\element.h
+	<windows.h>
+
+1494493387 source:d:\proj\windows\src\element.cpp
+	"Element.h"
+
+1494350188 source:d:\proj\windows\src\label.cpp
+	"Label.h"
+
+1494350188 d:\proj\windows\include\label.h
+	<Element.h>
+
+1494509623 source:d:\proj\windows\src\listbox.cpp
+	"ListBox.h"
+
+1494509623 d:\proj\windows\include\listbox.h
+	<Element.h>
+
+1494359523 source:d:\proj\windows\src\multitext.cpp
+	"MultiText.h"
+
+1494360690 d:\proj\windows\include\multitext.h
+	<string>
+	<vector>
+
+1494353052 source:d:\proj\windows\src\textarea.cpp
+	"TextArea.h"
+
+1494353052 d:\proj\windows\include\textarea.h
+	<Element.h>
+
+1494511921 source:d:\proj\windows\src\window.cpp
+	"Window.h"
+
+1494508666 d:\proj\windows\include\window.h
+	<windows.h>
+	<map>
+	<vector>
+	<string>
+	<Button.h>
+	<TextArea.h>
+	<ListBox.h>
+	<Label.h>
+	<MultiText.h>
+
+1494929011 source:d:\proj\windows\main.cpp
+	<Window.h>
+
+1518355851 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\main.cpp
+	<Window.h>
+
+1494508666 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\window.h
+	<windows.h>
+	<map>
+	<vector>
+	<string>
+	<Button.h>
+	<TextArea.h>
+	<ListBox.h>
+	<Label.h>
+	<MultiText.h>
+
+1494350528 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\button.h
+	<Element.h>
+
+1518355400 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\element.h
+	<windows.h>
+
+1494353052 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\textarea.h
+	<Element.h>
+
+1494509623 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\listbox.h
+	<Element.h>
+
+1494350188 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\label.h
+	<Element.h>
+
+1494360690 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\multitext.h
+	<string>
+	<vector>
+
+1518355851 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\button.cpp
+	"Button.h"
+
+1518355851 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\element.cpp
+	"Element.h"
+
+1494926583 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\imagebox.cpp
+	"ImageBox.h"
+
+1494926583 c:\users\eliteuser\downloads\telegram desktop\c++\windows\include\imagebox.h
+
+1494350188 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\label.cpp
+	"Label.h"
+
+1494509623 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\listbox.cpp
+	"ListBox.h"
+
+1494359523 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\multitext.cpp
+	"MultiText.h"
+
+1494353052 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\textarea.cpp
+	"TextArea.h"
+
+1518353058 source:c:\users\eliteuser\downloads\telegram desktop\c++\windows\src\window.cpp
+	"Window.h"
+
+1494926583 source:d:\projects\c++\windows\src\imagebox.cpp
+	"ImageBox.h"
+
+1494926583 d:\projects\c++\windows\include\imagebox.h
+
+1519227346 source:d:\projects\c++\windows\src\label.cpp
+	"Label.h"
+
+1519219737 d:\projects\c++\windows\include\label.h
+	<Element.h>
+
+1519226847 d:\projects\c++\windows\include\element.h
+	<windows.h>
+	<commctrl.h>
+	<iostream>
+	<string>
+
+1519227465 source:d:\projects\c++\windows\src\listbox.cpp
+	"ListBox.h"
+
+1519222437 d:\projects\c++\windows\include\listbox.h
+	<Element.h>
+
+1494359523 source:d:\projects\c++\windows\src\multitext.cpp
+	"MultiText.h"
+
+1494360690 d:\projects\c++\windows\include\multitext.h
+	<string>
+	<vector>
+
+1519229728 source:d:\projects\c++\windows\src\textarea.cpp
+	"TextArea.h"
+
+1519229728 d:\projects\c++\windows\include\textarea.h
+	<Element.h>
+
+1519227278 source:d:\projects\c++\windows\src\button.cpp
+	"Button.h"
+
+1519219566 d:\projects\c++\windows\include\button.h
+	<Element.h>
+
+1519229891 source:d:\projects\c++\windows\src\element.cpp
+	"Element.h"
+
+1519228971 source:d:\projects\c++\windows\main.cpp
+	<Window.h>
+
+1519230035 d:\projects\c++\windows\include\window.h
+	<map>
+	<vector>
+	<string>
+	<Button.h>
+	<TextArea.h>
+	<ListBox.h>
+	<Label.h>
+	<MultiText.h>
+
+1519229926 source:d:\projects\c++\windows\src\window.cpp
+	"Window.h"
+
+1518908835 source:d:\projects\c++\windows\res\resource.rc
+	<windows.h>
+
