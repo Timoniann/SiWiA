@@ -127,40 +127,12 @@ char TextArea::GetPasswordCharacter()
     return SendMessage(handle, EM_GETPASSWORDCHAR, 0, 0);
 }
 
-char * GetErrorMessage()
-{
-    LPTSTR lpszFunction = (LPTSTR)"Error: ";
-    LPVOID lpMsgBuf;
-    LPVOID lpDisplayBuf;
-    DWORD dw = GetLastError();
-
-    FormatMessage(
-        FORMAT_MESSAGE_ALLOCATE_BUFFER |
-        FORMAT_MESSAGE_FROM_SYSTEM |
-        FORMAT_MESSAGE_IGNORE_INSERTS,
-        NULL,
-        dw,
-        MAKELANGID(LANG_NEUTRAL, SUBLANG_DEFAULT),
-        (LPTSTR) &lpMsgBuf,
-        0, NULL );
-
-    // Display the error message and exit the process
-
-    lpDisplayBuf = (LPVOID)LocalAlloc(LMEM_ZEROINIT,
-        (lstrlen((LPCTSTR)lpMsgBuf) + lstrlen((LPCTSTR)lpszFunction) + 40) * sizeof(TCHAR));
-    lpDisplayBuf = (LPVOID)((string)lpszFunction + " failed with error " + to_string(dw) + " (" + (string)(char*)lpMsgBuf + ")").c_str();
-    MessageBox(NULL, (LPCTSTR)lpDisplayBuf, TEXT("Error"), MB_OK);
-    LocalFree(lpMsgBuf);
-    LocalFree(lpDisplayBuf);
-    //ExitProcess(dw);
-}
-
 // Not working
 void TextArea::SetDialogItemInt(int value)
 {
     if(SendMessage(parent, (int)hMenu, value, TRUE) == NULL) {
         cout << "Last error: " << GetLastError() << ".\n";
-        GetErrorMessage();
+        //GetErrorMessage();
     }
 }
 

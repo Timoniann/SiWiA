@@ -128,7 +128,7 @@
 1519219737 d:\projects\c++\windows\include\label.h
 	<Element.h>
 
-1519226847 d:\projects\c++\windows\include\element.h
+1519242850 d:\projects\c++\windows\include\element.h
 	<windows.h>
 	<commctrl.h>
 	<iostream>
@@ -159,13 +159,13 @@
 1519219566 d:\projects\c++\windows\include\button.h
 	<Element.h>
 
-1519229891 source:d:\projects\c++\windows\src\element.cpp
+1519242850 source:d:\projects\c++\windows\src\element.cpp
 	"Element.h"
 
-1519228971 source:d:\projects\c++\windows\main.cpp
+1519243837 source:d:\projects\c++\windows\main.cpp
 	<Window.h>
 
-1519230035 d:\projects\c++\windows\include\window.h
+1519243980 d:\projects\c++\windows\include\window.h
 	<map>
 	<vector>
 	<string>
@@ -174,10 +174,97 @@
 	<ListBox.h>
 	<Label.h>
 	<MultiText.h>
+	<WebCameraCapture.h>
 
-1519229926 source:d:\projects\c++\windows\src\window.cpp
+1519243851 source:d:\projects\c++\windows\src\window.cpp
 	"Window.h"
 
 1518908835 source:d:\projects\c++\windows\res\resource.rc
 	<windows.h>
+
+1519243668 source:d:\projects\c++\windows\src\webcameracapture.cpp
+	"WebCameraCapture.h"
+
+1519243668 d:\projects\c++\windows\include\webcameracapture.h
+	<Element.h>
+	<vfw.h>
+
+1519579027 source:d:\projects\c++\siwia\main.cpp
+	<Window.h>
+	<PopupMenu.h>
+
+1519243980 d:\projects\c++\siwia\include\window.h
+	<map>
+	<vector>
+	<string>
+	<Button.h>
+	<TextArea.h>
+	<ListBox.h>
+	<Label.h>
+	<MultiText.h>
+	<WebCameraCapture.h>
+
+1519219566 d:\projects\c++\siwia\include\button.h
+	<Element.h>
+
+1519308913 d:\projects\c++\siwia\include\element.h
+	<windows.h>
+	<commctrl.h>
+	<iostream>
+	<string>
+
+1519229728 d:\projects\c++\siwia\include\textarea.h
+	<Element.h>
+
+1519222437 d:\projects\c++\siwia\include\listbox.h
+	<Element.h>
+
+1519219737 d:\projects\c++\siwia\include\label.h
+	<Element.h>
+
+1494360690 d:\projects\c++\siwia\include\multitext.h
+	<string>
+	<vector>
+
+1519243668 d:\projects\c++\siwia\include\webcameracapture.h
+	<Element.h>
+	<vfw.h>
+
+1518908835 source:d:\projects\c++\siwia\res\resource.rc
+	<windows.h>
+
+1519227278 source:d:\projects\c++\siwia\src\button.cpp
+	"Button.h"
+
+1519398692 source:d:\projects\c++\siwia\src\element.cpp
+	"Element.h"
+
+1494926583 source:d:\projects\c++\siwia\src\imagebox.cpp
+	"ImageBox.h"
+
+1494926583 d:\projects\c++\siwia\include\imagebox.h
+
+1519227346 source:d:\projects\c++\siwia\src\label.cpp
+	"Label.h"
+
+1519227465 source:d:\projects\c++\siwia\src\listbox.cpp
+	"ListBox.h"
+
+1494359523 source:d:\projects\c++\siwia\src\multitext.cpp
+	"MultiText.h"
+
+1519563825 source:d:\projects\c++\siwia\src\textarea.cpp
+	"TextArea.h"
+
+1519243668 source:d:\projects\c++\siwia\src\webcameracapture.cpp
+	"WebCameraCapture.h"
+
+1519243851 source:d:\projects\c++\siwia\src\window.cpp
+	"Window.h"
+
+1519580554 source:d:\projects\c++\siwia\src\popupmenu.cpp
+	"PopupMenu.h"
+
+1519580554 d:\projects\c++\siwia\include\popupmenu.h
+	<Element.h>
 

@@ -9,6 +9,7 @@
 #include <ListBox.h>
 #include <Label.h>
 #include <MultiText.h>
+#include <WebCameraCapture.h>
 
 using namespace std;
 
@@ -19,10 +20,7 @@ class Window : public Element
         bool hasVScroll = false;
         Window(char * title, int wigth, int height, bool isMain = false);
 
-        void AddButton(Button * b);
-        void AddTextArea(TextArea * t);
-        void AddListBox(ListBox * l);
-        void AddLabel(Label * l);
+        void AddElement(Element*);
         void AddMultiText(MultiText * m);
         void Update();
 
@@ -33,11 +31,11 @@ class Window : public Element
         void Hide();
 
         void SetFuncClose(bool(*func)());
-
+        vector<Element*> elements;/*
         vector<Button*> buttons;
         vector<TextArea*> textAreas;
         vector<ListBox*> listBoxes;
-        vector<Label*> labels;
+        vector<Label*> labels;*/
         vector<MultiText*> multiTexts;
 
     protected:

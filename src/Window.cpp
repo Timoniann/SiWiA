@@ -47,18 +47,10 @@ LRESULT CALLBACK Window::Procedure(HWND hwnd, UINT message, WPARAM wParam, LPARA
 
 
         handle = hwnd;
-        for(int i = 0; i < buttons.size(); i++){
-            buttons[i]->Init(hwnd);
-            buttons[i]->Show();
+        for(int i = 0; i < elements.size(); i++){
+            elements[i]->Init(hwnd);
+            elements[i]->Show();
         }
-        for(int i = 0; i < textAreas.size(); i++){
-            textAreas[i]->Init(hwnd);
-            textAreas[i]->Show();
-        }
-        for(int i = 0; i < listBoxes.size(); i++)
-            listBoxes[i]->Init(hwnd);
-        for (int i = 0; i < labels.size(); i++)
-            labels[i]->Init(hwnd);
         break;
 
     case WM_CLOSE:
@@ -67,17 +59,18 @@ LRESULT CALLBACK Window::Procedure(HWND hwnd, UINT message, WPARAM wParam, LPARA
         break;
 
     case WM_DESTROY:
-        //~Window();
+        this->~Element();
         //delete this;
         //Destroy();
+
         if (main) PostQuitMessage(0);
 
         break;
 
     case WM_COMMAND:
-        for(int i = 0; i < buttons.size(); i++)
-            if((int)buttons[i]->hMenu == (int)LOWORD(wParam))
-                buttons[i]->Click();
+        for(int i = 0; i < elements.size(); i++)
+            if((int)elements[i]->hMenu == (int)LOWORD(wParam))
+                elements[i]->Click();
         return 0;
         break;
 
@@ -206,24 +199,9 @@ bool Window::SetWinClass(const char* name, HBRUSH backgroundColor)
     return RegisterClassEx(&wincl);
 }
 
-void Window::AddButton(Button * b)
+void Window::AddElement(Element * e)
 {
-    buttons.push_back(b);
-}
-
-void Window::AddTextArea(TextArea * t)
-{
-    textAreas.push_back(t);
-}
-
-void Window::AddListBox(ListBox * l)
-{
-    listBoxes.push_back(l);
-}
-
-void Window::AddLabel(Label * l)
-{
-    labels.push_back(l);
+    elements.push_back(e);
 }
 
 void Window::AddMultiText(MultiText * m)

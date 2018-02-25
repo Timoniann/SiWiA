@@ -55,7 +55,7 @@ class Element
         ElementInitializer initializer;
 
         virtual ~Element();
-        void Init(HWND parent = HWND_DESKTOP);
+        virtual void Init(HWND parent = HWND_DESKTOP);
 
     protected:
         void (*ClickFunction)() = nullptr;
